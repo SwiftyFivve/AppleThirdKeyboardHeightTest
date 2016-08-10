@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThirdPartyKeyboardTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vK-JG-qR7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rmc-g8-5SN">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select a third party keyboard before testing. The screen should scroll up when the TextField is selceted" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQL-wr-kCR">
+                                                <rect key="frame" x="8" y="241" width="584" height="117"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="117" id="gYS-FO-QMh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select This" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZtJ-3B-Sro">
+                                                <rect key="frame" x="8" y="484" width="584" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="584" id="45f-mk-HFB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Project for Third Party Keyboard Response" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UI8-2B-8PY">
+                                                <rect key="frame" x="8" y="104" width="584" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="584" id="Lnu-Zo-aAD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ZtJ-3B-Sro" secondAttribute="trailing" constant="8" id="0vI-gS-Jr9"/>
+                                            <constraint firstItem="UI8-2B-8PY" firstAttribute="leading" secondItem="Rmc-g8-5SN" secondAttribute="leading" constant="8" id="9Om-Zr-qkn"/>
+                                            <constraint firstItem="ZtJ-3B-Sro" firstAttribute="leading" secondItem="Rmc-g8-5SN" secondAttribute="leading" constant="8" id="Avk-XH-YQY"/>
+                                            <constraint firstItem="UI8-2B-8PY" firstAttribute="top" secondItem="Rmc-g8-5SN" secondAttribute="top" constant="104" id="DlE-VA-kNf"/>
+                                            <constraint firstItem="eQL-wr-kCR" firstAttribute="leading" secondItem="Rmc-g8-5SN" secondAttribute="leading" constant="8" id="Eur-hC-QY9"/>
+                                            <constraint firstAttribute="trailing" secondItem="UI8-2B-8PY" secondAttribute="trailing" constant="8" id="GGq-x9-4lR"/>
+                                            <constraint firstItem="ZtJ-3B-Sro" firstAttribute="top" secondItem="eQL-wr-kCR" secondAttribute="bottom" constant="126" id="g1p-bn-ude"/>
+                                            <constraint firstAttribute="trailing" secondItem="eQL-wr-kCR" secondAttribute="trailing" constant="8" id="lDD-rW-fvo"/>
+                                            <constraint firstItem="eQL-wr-kCR" firstAttribute="top" secondItem="UI8-2B-8PY" secondAttribute="bottom" constant="116" id="sgB-yI-a87"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Rmc-g8-5SN" secondAttribute="bottom" id="449-Bn-0zk"/>
+                                    <constraint firstItem="Rmc-g8-5SN" firstAttribute="centerX" secondItem="9vK-JG-qR7" secondAttribute="centerX" id="4f2-Tp-bxQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rmc-g8-5SN" secondAttribute="trailing" id="KiY-Ci-dKF"/>
+                                    <constraint firstItem="Rmc-g8-5SN" firstAttribute="top" secondItem="9vK-JG-qR7" secondAttribute="top" id="huH-VM-ZGD"/>
+                                    <constraint firstItem="Rmc-g8-5SN" firstAttribute="centerY" secondItem="9vK-JG-qR7" secondAttribute="centerY" id="iVE-wO-tAP"/>
+                                    <constraint firstItem="Rmc-g8-5SN" firstAttribute="leading" secondItem="9vK-JG-qR7" secondAttribute="leading" id="kaa-CJ-lSV"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9vK-JG-qR7" secondAttribute="bottom" id="K49-0K-oL2"/>
+                            <constraint firstItem="9vK-JG-qR7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XxK-vF-vrF"/>
+                            <constraint firstItem="9vK-JG-qR7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="npu-L4-sXs"/>
+                            <constraint firstAttribute="trailing" secondItem="9vK-JG-qR7" secondAttribute="trailing" id="wj8-GI-yF9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="9vK-JG-qR7" id="Lwn-EF-WHk"/>
+                        <outlet property="scrollViewBottomConstraint" destination="449-Bn-0zk" id="VZB-ZL-MGT"/>
+                        <outlet property="textField" destination="ZtJ-3B-Sro" id="wa6-4F-VqZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="587"/>
+        </scene>
+    </scenes>
+</document>
